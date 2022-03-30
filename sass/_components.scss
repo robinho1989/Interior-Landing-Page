@@ -1,0 +1,46 @@
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+.section-padding {
+	padding: 70px 15px 0px 15px;
+}
+.section-header {
+	font-size: 6rem;
+	font-weight: 600;
+	line-height: 1.2;
+}
+.section-italic {
+	font-style: italic;
+	color: $highlight-blue;
+}
+.section-paragraph {
+	font-size: 1.6rem;
+	color: $paragraph-color;
+}
+.button {
+	padding: 15px 20px;
+	height: 65px;
+	width: 185px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	border-radius: 25px;
+	cursor: pointer;
+    &--blue{
+        margin-top: 30px;
+		border: none;
+		color: $pure-white;
+		background-color: $highlight-blue;
+    }
+    &--white{
+        margin-bottom: 20px;
+		color: $highlight-blue;
+		background-color: $pure-white;
+		border: 1px solid $highlight-blue;
+		transition: color, background-color 0.5s;
+    }
+}
+.text{
+    padding: 40px 0;
+}

@@ -1,0 +1,58 @@
+@media (min-width: 768px) {
+	.hero {
+		&__images {
+			display: flex;
+			column-gap: 25px;
+		}
+		&__image {
+			min-width: 300px;
+			&--one {
+				flex-shrink: 1;
+			}
+			&--two {
+				flex-shrink: 2;
+			}
+		}
+	}
+	.featured {
+		&__images {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 25px;
+		}
+		&__image {
+			margin: 0;
+			&--one {
+				grid-column-start: 1;
+				grid-column-end: 2;
+			}
+			&--two {
+				grid-column-start: 2;
+				grid-column-end: 4;
+			}
+			&--three {
+				grid-column-start: 1;
+				grid-column-end: 3;
+			}
+			&--four {
+				grid-column-start: 3;
+				grid-column-end: 4;
+			}
+		}
+	}
+	.team{
+		&__images {
+			display: flex;
+			column-gap: 25px;
+		}
+		&__image {
+			min-width: 300px;
+			&--one {
+				flex-shrink: 2;
+			}
+			&--two {
+				flex-shrink: 1;
+			}
+		}
+	}
+}
