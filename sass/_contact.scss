@@ -1,0 +1,74 @@
+.contact {
+	padding-bottom: 70px;
+	&__text {
+		padding: 40px 0;
+	}
+	&__form-textarea {
+		padding: 20px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		border: 1px solid $button-border;
+		border-radius: 48px;
+		&--btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 85px;
+			background-color: $highlight-blue;
+			cursor: pointer;
+		}
+	}
+	&__input {
+		font-size: 1.6rem;
+		font-weight: 500;
+		color: $black;
+		border: none;
+	}
+	&__label {
+		font-size: 1.6rem;
+		font-weight: 500;
+		color: $button-border;
+	}
+	&__button {
+		font-size: 1.6em;
+		font-weight: 500;
+		color: $pure-white;
+		border: none;
+		background: none;
+	}
+	@media (min-width: 992px) {
+		padding-bottom: 90px;
+		.section-paragraph {
+			width: 60%;
+		}
+		&__form {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 30px;
+		}
+		&__form-textarea {
+			margin-bottom: 0;
+			&--one {
+				grid-column-start: 1;
+				grid-column-end: 3;
+			}
+			&--two {
+				grid-column-start: 3;
+				grid-column-end: 5;
+			}
+			&--three {
+				grid-column-start: 1;
+				grid-column-end: 3;
+				grid-row-start: 2;
+				grid-row-end: 3;
+			}
+			&--btn {
+				grid-column-start: 3;
+				grid-column-end: 5;
+				grid-row-start: 2;
+				grid-row-end: 3;
+			}
+		}
+	}
+}

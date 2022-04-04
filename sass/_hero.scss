@@ -1,0 +1,52 @@
+.hero {
+	&__text {
+		padding: 40px 0;
+	}
+	&__image {
+		margin-bottom: 20px;
+		min-height: 250px;
+		height: 450px;
+		width: 100%;
+		object-fit: cover;
+	}
+	&__buttons-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		column-gap: 20px;
+		width: 100%;
+	}
+	.button--white:hover {
+		color: $pure-white;
+		background-color: $highlight-blue;
+	}
+	@media (min-width: 768px) {
+		&__images {
+			display: flex;
+			column-gap: 25px;
+		}
+		&__image {
+			min-width: 300px;
+			&--one {
+				flex-shrink: 1;
+			}
+			&--two {
+				flex-shrink: 2;
+			}
+		}
+	}
+	@media (min-width: 992px) {
+		&__text {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.button--blue {
+			margin: 0;
+		}
+		.section-paragraph {
+			width: 60%;
+		}
+	}
+}

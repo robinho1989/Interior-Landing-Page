@@ -1,0 +1,40 @@
+.team {
+	&__text {
+		padding: 40px 0;
+	}
+	&__image {
+		margin-bottom: 20px;
+		min-height: 250px;
+		height: 450px;
+		width: 100%;
+		object-fit: cover;
+	}
+	@media (min-width: 768px) {
+		&__images {
+			display: flex;
+			column-gap: 25px;
+		}
+		&__image {
+			min-width: 300px;
+			&--one {
+				flex-shrink: 2;
+			}
+			&--two {
+				flex-shrink: 1;
+			}
+		}
+	}
+    @media (min-width: 992px){
+        &__text {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.button--blue {
+			margin: 0;
+		}
+		.section-paragraph {
+			width: 60%;
+		}
+    }
+}

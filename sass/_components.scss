@@ -27,20 +27,31 @@
 	font-weight: 500;
 	border-radius: 25px;
 	cursor: pointer;
-    &--blue{
-        margin-top: 30px;
+	&--blue {
+		margin-top: 30px;
 		border: none;
 		color: $pure-white;
 		background-color: $highlight-blue;
-    }
-    &--white{
-        margin-bottom: 20px;
+	}
+	&--white {
+		margin-bottom: 20px;
 		color: $highlight-blue;
 		background-color: $pure-white;
 		border: 1px solid $highlight-blue;
 		transition: color, background-color 0.5s;
-    }
+	}
 }
-.text{
-    padding: 40px 0;
+.text {
+	padding: 40px 0;
+}
+@media (min-width: 992px) {
+	.section-padding {
+		padding: 90px 15px 0px 15px;
+	}
+	.section-header {
+		font-size: 15rem;
+	}
+	.section-paragraph {
+		font-size: 1.8rem;
+	}
 }
