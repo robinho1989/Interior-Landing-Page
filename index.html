@@ -19,7 +19,7 @@
         <div class="wrapper">
             <div class="header__nav-container">
                 <a href="#" class="header__logo">Realta.</a>
-                <nav class="header__nav-mobile">
+                <nav class="header__nav-mobile" role="navigation" aria-label="main-menu">
                     <ul class="header__nav-mobile-list">
                         <li class="header__nav-mobile-item"><a href="" class="header__nav-mobile-link">new development<a></li>
                         <li class="header__nav-mobile-item"><a href="" class="header__nav-mobile-link">our teams<a></li>
@@ -37,8 +37,8 @@
                         <li class="header__nav-desktop-item"><a href="" class="header__nav-desktop-link">our gallery<a></li>
                     </ul>
                 </nav>
-                <button class="hamburger hamburger--spin" type="button">
-                    <span class="hamburger-box">
+                <button class="hamburger hamburger--spin" type="button" aria-expanded="true">
+                    <span class="hamburger-box" aria-hidden="true" focusable="false">
                         <span class="hamburger-inner"></span>
                     </span>
                 </button>
