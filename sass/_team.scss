@@ -11,23 +11,23 @@
 	}
 	@media (min-width: 768px) {
 		&__images {
-			display: flex;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
 			column-gap: 25px;
 		}
 		&__images-list {
 			min-width: 300px;
-			list-style: none;}
-		&__image{	
+			list-style: none;
 			&--one {
-				flex-shrink: 2;
+				grid-column: 1/2;
 			}
 			&--two {
-				flex-shrink: 1;
+				grid-column: 2/4;
 			}
 		}
 	}
-    @media (min-width: 992px){
-        &__text {
+	@media (min-width: 992px) {
+		&__text {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -38,5 +38,5 @@
 		.paragraph {
 			width: 60%;
 		}
-    }
+	}
 }
