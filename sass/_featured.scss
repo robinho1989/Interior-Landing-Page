@@ -15,8 +15,9 @@
 			grid-template-columns: repeat(3, 1fr);
 			gap: 25px;
 		}
-		&__image {
+		&__images-list {
 			margin: 0;
+			list-style: none;
 			&--one {
 				grid-column-start: 1;
 				grid-column-end: 2;
