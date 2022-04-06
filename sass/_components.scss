@@ -44,6 +44,9 @@
 .text {
 	padding: 40px 0;
 }
+.list-item{
+	list-style: none;
+}
 @media (min-width: 992px) {
 	.padding {
 		padding: 90px 15px 0px 15px;
