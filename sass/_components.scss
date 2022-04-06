@@ -3,19 +3,19 @@
 	width: 100%;
 	max-width: 1200px;
 }
-.section-padding {
+.padding {
 	padding: 70px 15px 0px 15px;
 }
-.section-header {
+.heading {
 	font-size: 6rem;
 	font-weight: 600;
 	line-height: 1.2;
 }
-.section-italic {
+.italic {
 	font-style: italic;
 	color: $highlight-blue;
 }
-.section-paragraph {
+.paragraph {
 	font-size: 1.6rem;
 	color: $paragraph-color;
 }
@@ -45,13 +45,13 @@
 	padding: 40px 0;
 }
 @media (min-width: 992px) {
-	.section-padding {
+	.padding {
 		padding: 90px 15px 0px 15px;
 	}
-	.section-header {
+	.heading {
 		font-size: 15rem;
 	}
-	.section-paragraph {
+	.paragraph {
 		font-size: 1.8rem;
 	}
 }
