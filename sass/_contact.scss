@@ -3,21 +3,9 @@
 	&__text {
 		padding: 40px 0;
 	}
-	&__form-textarea {
-		padding: 20px;
-		margin-bottom: 20px;
+	&__form {
 		display: flex;
 		flex-direction: column;
-		border: 1px solid $button-border;
-		border-radius: 48px;
-		&--btn {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 85px;
-			background-color: $highlight-blue;
-			cursor: pointer;
-		}
 	}
 	&__input {
 		font-size: 1.6rem;
@@ -26,16 +14,25 @@
 		border: none;
 	}
 	&__label {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		margin-bottom: 20px;
 		font-size: 1.6rem;
 		font-weight: 500;
 		color: $button-border;
+		border: 1px solid $button-border;
+		border-radius: 48px;
 	}
 	&__button {
+		height: 85px;
+		background-color: $highlight-blue;
 		font-size: 1.6em;
 		font-weight: 500;
 		color: $pure-white;
 		border: none;
-		background: none;
+		border-radius: 48px;
+		cursor: pointer;
 	}
 	@media (min-width: 992px) {
 		padding-bottom: 90px;
@@ -44,31 +41,11 @@
 		}
 		&__form {
 			display: grid;
-			grid-template-columns: repeat(4, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 			gap: 30px;
 		}
-		&__form-textarea {
+		&__label {
 			margin-bottom: 0;
-			&--one {
-				grid-column-start: 1;
-				grid-column-end: 3;
-			}
-			&--two {
-				grid-column-start: 3;
-				grid-column-end: 5;
-			}
-			&--three {
-				grid-column-start: 1;
-				grid-column-end: 3;
-				grid-row-start: 2;
-				grid-row-end: 3;
-			}
-			&--btn {
-				grid-column-start: 3;
-				grid-column-end: 5;
-				grid-row-start: 2;
-				grid-row-end: 3;
-			}
 		}
 	}
 }
