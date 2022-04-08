@@ -1,5 +1,5 @@
-const burgerBtn = document.querySelector('.hamburger');
-const navMobile = document.querySelector('.header__nav-mobile');
+const burgerBtn = document.getElementById('hamburger-btn');
+const navMobile = document.getElementById('nav-mobile');
 
 function mobileVew() {
 	navMobile.classList.toggle('header__nav-mobile--active');
